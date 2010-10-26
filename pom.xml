@@ -33,7 +33,7 @@
   <artifactId>xwiki-userevents</artifactId>
   <packaging>jar</packaging>
   <name>XWiki Contrib - User Events</name>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <description>A module providing OM events related to user profiles + a feature of email notifications upon user registration.</description>
   <properties>
     <platform.core.version>2.4.4</platform.core.version>
@@ -42,9 +42,9 @@
     <xwiki.clirr.skip>true</xwiki.clirr.skip>
   </properties>
   <scm>
-    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/tags/xwiki-userevents-1.0</connection>
-    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/tags/xwiki-userevents-1.0</developerConnection>
-    <url>http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/tags/xwiki-userevents-1.0</url>
+    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/trunk</connection>
+    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/trunk</developerConnection>
+    <url>http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/trunk</url>
   </scm>
   <distributionManagement>
     <repository>
