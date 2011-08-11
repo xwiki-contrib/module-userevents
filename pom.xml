@@ -42,9 +42,9 @@
     <xwiki.clirr.skip>true</xwiki.clirr.skip>
   </properties>
   <scm>
-    <connection>scm:svn:http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/trunk</connection>
-    <developerConnection>scm:svn:https://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/trunk</developerConnection>
-    <url>http://svn.xwiki.org/svnroot/xwiki/contrib/projects/xwiki-userevents/trunk</url>
+    <connection>scm:git:git://github.com/xwiki-contrib/module-userevents.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/module-userevents.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/module-userevents</url>
   </scm>
   <distributionManagement>
     <repository>
