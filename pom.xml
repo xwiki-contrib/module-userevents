@@ -33,7 +33,7 @@
   <artifactId>xwiki-userevents</artifactId>
   <packaging>jar</packaging>
   <name>XWiki Contrib - User Events</name>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.1</version>
   <description>A module providing OM events related to user profiles + a feature of email notifications upon user registration.</description>
   <properties>
     <platform.core.version>4.2</platform.core.version>
@@ -44,6 +44,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/module-userevents.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/module-userevents.git</developerConnection>
     <url>https://github.com/xwiki-contrib/module-userevents</url>
+    <tag>xwiki-userevents-1.1</tag>
   </scm>
   <distributionManagement>
     <repository>
