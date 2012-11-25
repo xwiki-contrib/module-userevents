@@ -25,9 +25,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>xwiki-core-parent</artifactId>
+    <artifactId>xwiki-platform-core</artifactId>
     <groupId>org.xwiki.platform</groupId>
-    <version>2.4.4</version>
+    <version>4.2</version>
   </parent>
   <groupId>org.xwiki.contrib</groupId>
   <artifactId>xwiki-userevents</artifactId>
@@ -36,10 +36,9 @@
   <version>1.1-SNAPSHOT</version>
   <description>A module providing OM events related to user profiles + a feature of email notifications upon user registration.</description>
   <properties>
-    <platform.core.version>2.4.4</platform.core.version>
-    <platform.mailsender.version>1.14</platform.mailsender.version>
-    <!-- Skip Clirr execution, since this is a new component -->
+    <platform.core.version>4.2</platform.core.version>
     <xwiki.clirr.skip>true</xwiki.clirr.skip>
+    <xwiki.checkstyle.skip>true</xwiki.checkstyle.skip>
   </properties>
   <scm>
     <connection>scm:git:git://github.com/xwiki-contrib/module-userevents.git</connection>
@@ -56,16 +55,37 @@
   <dependencies>
     <!-- XWiki Core -->
     <dependency>
-      <groupId>com.xpn.xwiki.platform</groupId>
-      <artifactId>xwiki-core</artifactId>
+      <groupId>org.xwiki.commons</groupId>
+      <artifactId>xwiki-commons-component-api</artifactId>
+      <version>${platform.core.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- XWiki Core -->
+    <dependency>
+      <groupId>org.xwiki.commons</groupId>
+      <artifactId>xwiki-commons-observation-api</artifactId>
+      <version>${platform.core.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- XWiki Core -->
+    <dependency>
+      <groupId>org.xwiki.platform</groupId>
+      <artifactId>xwiki-platform-bridge</artifactId>
+      <version>${platform.core.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- XWiki Core -->
+    <dependency>
+      <groupId>org.xwiki.platform</groupId>
+      <artifactId>xwiki-platform-oldcore</artifactId>
       <version>${platform.core.version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- Mailsender Plugin -->
     <dependency>
-      <groupId>com.xpn.xwiki.platform.plugins</groupId>
-      <artifactId>xwiki-plugin-mailsender</artifactId>
-      <version>${platform.mailsender.version}</version>
+      <groupId>org.xwiki.platform</groupId>
+      <artifactId>xwiki-platform-mailsender</artifactId>
+      <version>${platform.core.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
